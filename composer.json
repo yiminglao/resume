@@ -1,0 +1,23 @@
+{
+    "name": "yl26236/mingresume",
+    "description": "This is a resume project",
+    "type": "project",
+    "license": "Monkey Park",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Resume\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Monkey Park",
+            "email": "yilao@mail.weber.edu"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.2",
+        "swiftmailer/swiftmailer": "^6.0",
+        "philo/laravel-blade": "2.*"
+    }
+}

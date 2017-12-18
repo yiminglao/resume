@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteBase /~yl26236/mingresume
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule (.*)$ index.php?request=$1 [QSA,L,PT,NS]
+</IfModule>
