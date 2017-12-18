@@ -12,10 +12,10 @@ class DbConnection
 {
 
     private static  $instance = null;
-    private static  $username = 'W01126236';
-    private static  $password = 'Yics!';
+    private static  $username = 'username';
+    private static  $password = 'password!';
     private static  $host = 'localhost';
-    private static  $dbname = "W01126236";
+    private static  $dbname = "dbname";
 
 
     private function __construct()
