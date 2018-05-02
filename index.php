@@ -176,8 +176,8 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) u
             $body = htmlspecialchars($_POST['message']);
             // Create the Transport
             $transport = (new Swift_SmtpTransport('smtp.gmail.com', 587,'tls'))
-                ->setUsername('ming020486@gmail.com')
-                ->setPassword('Ming1986');
+                ->setUsername('email')
+                ->setPassword('123456');
 
             // Create the Mailer using your created Transport
             $mailer = new Swift_Mailer($transport);
@@ -185,7 +185,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) u
             // Create a message
             $message = (new Swift_Message($subject))
                 ->setFrom([$email => $name])
-                ->setTo(['ming020486@gmail.com', 'ming020486@gmail.com' => 'Ming'])
+                ->setTo(['ming@gmail.com', 'ming@gmail.com' => 'Ming'])
                 ->setBody($body);
 
             // Send the message
